@@ -17,7 +17,7 @@ if installato pulseaudio ; then
     echo -e "\e[38;5;192m Pulseaudio già installato."  		
 else
     echo -e "\e[38;7;255m Installo Pulseaudio..."  	
-	sudo apt-get upgrade
+	sudo apt-get update
     sudo apt-get install pulseaudio
 	pulseaudio --start
 fi

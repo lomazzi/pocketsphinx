@@ -39,8 +39,8 @@ if installato pulseaudio ; then
     echo -e "\e[38;5;192m Pulseaudio già installato."  		
 else
     echo -e "\e[38;7;255m Installo Pulseaudio..."  	
-	sudo apt-get update
-    sudo apt-get install pulseaudio
+	sudo apt-get -y update
+    sudo apt-get -y install pulseaudio
 	pulseaudio --start
 fi
 
@@ -53,7 +53,7 @@ tar -xzvf sphinxbase.tar.gz
 tar -xzvf pocketsphinx.tar.gz
 
 echo -e "\e[38;7;255m Install bison, ALSA, and swig"
-sudo apt-get install bison libasound2-dev swig
+sudo apt-get -y install bison libasound2-dev swig
 
 echo -e "\e[38;7;255m Compile sphinxbase"
 cd sphinxbase-5prealpha
